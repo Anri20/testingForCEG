@@ -1,3 +1,3 @@
 # testingForCEG
 
-![Shockingg!!](./img/shock.jpg)
+![Kowalski Analysis!!](./img/pengi.jpg)
