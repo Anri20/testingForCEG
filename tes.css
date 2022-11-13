@@ -1,0 +1,16 @@
+.tes1{
+    color:blue;
+}
+.tes2{
+    color: red;
+}
+#tesid1{
+    color:yellow;
+}
+.testdiv{
+    width:100px;
+    height:100px;
+    background-color: red;
+    padding:10px;
+    margin: 50px;
+}
