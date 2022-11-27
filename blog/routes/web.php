@@ -48,13 +48,8 @@ Route::get('/param3/{a?}', function ($a = 'aku adalah a') {
 });
 
 // Route::get('/testing', 'TestingController@testing');
-<<<<<<< Updated upstream
-Route::get('/testing', 'App\Http\Controllers\TestingController@testing');
-
-=======
 Route::get('/testing', 'App\Http\Controllers\TestingController@testing')->name('testing.coba');
 Route::get('/testing/nampilin', 'App\Http\Controllers\TestingController@nampilin')->name('testing.nampilin');
->>>>>>> Stashed changes
 // Route::get('/testing/1', 'App\Http\Controllers\TestingController@testing2');
 
 // Route::post('/', function () {
