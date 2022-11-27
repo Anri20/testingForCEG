@@ -22,14 +22,15 @@ Route::get('/', function () {
 //     return view('namaFile');
 // });
 
-Route::view('/namaWeb', 'namaFile');
+// Route::view('/namaWeb', 'namaFile');
+Route::get('/namaWeb', 'App\Http\Controllers\TestingController@show');
 
 Route::get('/HelloWorld', function () {
     return "Ini adalah kalimat dan kata";
     // return '1' + '2';
 });
 
-Route::redirect('/namaWeb', '/HelloWorld');
+// Route::redirect('/namaWeb', '/HelloWorld');
 
 Route::get('/param/{a}', function ($a) {
     // return "Kamu mengetikkan " . $a;
@@ -47,8 +48,13 @@ Route::get('/param3/{a?}', function ($a = 'aku adalah a') {
 });
 
 // Route::get('/testing', 'TestingController@testing');
+<<<<<<< Updated upstream
 Route::get('/testing', 'App\Http\Controllers\TestingController@testing');
 
+=======
+Route::get('/testing', 'App\Http\Controllers\TestingController@testing')->name('testing.coba');
+Route::get('/testing/nampilin', 'App\Http\Controllers\TestingController@nampilin')->name('testing.nampilin');
+>>>>>>> Stashed changes
 // Route::get('/testing/1', 'App\Http\Controllers\TestingController@testing2');
 
 // Route::post('/', function () {
