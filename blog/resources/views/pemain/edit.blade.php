@@ -7,11 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action={{ route('pemain.update','[parameter]')}} method="POST">
+    <form action={{ route('pemain.update', ['pemain' => $pemain->idpemain])}} method="POST">
+        @csrf
+        @method('PUT')
         <label>Name</label>
-        <input type="text" id="pemain-name" placeholder="Input nama pemain" name="pemain_name" value="">
+        <input type="text" id="pemain-name" placeholder="Input nama pemain" name="pemain_name" value="{{ $pemain->nama }}">
         <label>Gender</label>
-        <input type="text" id="pemain-gender" placeholder="Input gender pemain" name="pemain_gender" value="">
+        <input type="text" id="pemain-gender" placeholder="Input gender pemain" name="pemain_gender" value="{{ $pemain->gender }}">
         <button type="submit">Submit</button>
     </form>
 </body>

@@ -8,12 +8,14 @@
 </head>
 
 <body>
-    <form action={{ route('pemain.index')}} method="POST">
+    <form action={{ route('pemain.store')}} method="POST">
+        @csrf
         <label>Name</label>
         <input type="text" id="pemain-name" placeholder="Input nama pemain" name="pemain_name">
         <label>Gender</label>
         <input type="text" id="pemain-gender" placeholder="Input gender pemain" name="pemain_gender">
         <button type="submit">Submit</button>
     </form>
+    <br>
 </body>
 </html>

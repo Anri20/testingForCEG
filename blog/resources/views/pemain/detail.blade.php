@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    @csrf
     <div>
         <h5>Ini adalah halaman detail yang menampilkan detail pemain X dengan gendernya Y</h5>
     </div>

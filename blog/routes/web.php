@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PemainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,8 +48,12 @@ Route::get('/param3/{a?}', function ($a = 'aku adalah a') {
 
 // Route::get('/testing', 'TestingController@testing');
 Route::get('/testing', 'App\Http\Controllers\TestingController@testing');
+
 // Route::get('/testing/1', 'App\Http\Controllers\TestingController@testing2');
 
 // Route::post('/', function () {
 //     return view('welcome');
 // });
+
+// STEP 1
+Route::resource('pemain', 'App\Http\Controllers\PemainController');

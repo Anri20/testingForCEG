@@ -14,6 +14,6 @@ class DetailPemain extends Model
 
     public function pemain()
     {
-        return $this->belongsTo(Pemain::class, 'pemain_id');
+        return $this->belongsTo(Pemain::class, 'idpemain');
     }
 }

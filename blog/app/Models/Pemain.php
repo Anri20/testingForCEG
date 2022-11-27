@@ -11,10 +11,12 @@ class Pemain extends Model
     use HasFactory;
     public $timestamps = false;
     protected $table = 'pemain';
+    // Opsional
+    protected $primaryKey = 'idpemain';
     
     public function detail_pemain()
     {
-        return $this->hasMany(DetailPemain::class, 'pemain_id');
+        return $this->hasMany(DetailPemain::class, 'idpemain');
     }
     
 }
